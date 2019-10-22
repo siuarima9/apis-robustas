@@ -2,8 +2,8 @@
 {
     public enum SituacaoJogador
     {
-        Ativo = 0,
+        EmAnalise = 0,
         Bloqeuado = 1,
-        EmAndamento = 2
+        Ativo = 2
     }
 }

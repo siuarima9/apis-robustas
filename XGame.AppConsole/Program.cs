@@ -17,10 +17,20 @@ namespace XGame.AppConsole
             var service = new ServiceJogador();
             Console.WriteLine("Criei instancia do serviço");
 
-            var request = new AutenticarJogadorRequest();
+            var requestAdd = new AdicionarJogadorRequest() { 
+                PrimeiroNome = "Siuari",
+                Sobrenome = "Damaceno",
+                Email = "siuari@email.com",
+                Senha = "123456"
+            };
+
+            //var request = new AutenticarJogadorRequest();
+
             Console.WriteLine("Cries instancia de um objeto reques");
 
-            var response = service.AutenticarJogador(request);
+            var resoibse = service.AdicionarJogador(requestAdd);
+
+            //var response = service.AutenticarJogador(request);
             Console.ReadKey();
         }
     }
